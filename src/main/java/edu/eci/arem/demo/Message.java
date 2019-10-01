@@ -4,22 +4,22 @@ package edu.eci.arem.demo;
 
 public class Message{
 
-    public String Mes;
+    public String mensaje;
 
     public Message(){
         
     }
 
-    public Message(String Mes){
-        this.Mes  = Mes;
+    public Message(String mensaje){
+        this.mensaje  = mensaje;
     }
 
-    public String getMes() {
-        return Mes;
+    public String getMensaje() {
+        return mensaje;
     }
 
-    public void setMes(String Mes) {
-        this.Mes = Mes;
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
     }
 
 }

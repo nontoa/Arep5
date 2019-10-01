@@ -13,7 +13,7 @@ public class Controller {
 	@Autowired
 	IMessageRepository messageRepository;
 	
-	@RequestMapping(value="/filas",method = RequestMethod.GET)
+	@RequestMapping(value="/mensaje",method = RequestMethod.GET)
 	public ResponseEntity<?> listAllDB(){
 	    try {
 	        return new ResponseEntity<>(messageRepository.findAll(),HttpStatus.ACCEPTED);

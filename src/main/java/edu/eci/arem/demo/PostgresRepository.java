@@ -34,7 +34,6 @@ public class PostgresRepository implements IMessageRepository {
 	
 	@Override
 	public List<Message> findAll() throws SQLException {
-		System.out.println("////////////////////////////////////////////aquiiiii");
 		String query = "SELECT * FROM texto;";
 		List<Message> auctions = new ArrayList<Message>();
 		Connection connection = null;
@@ -44,7 +43,7 @@ public class PostgresRepository implements IMessageRepository {
 			ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				Message auction = new Message();
-				auction.setMes(rs.getString("justText"));						
+				auction.setMensaje(rs.getString("justText"));						
 				auctions.add(auction);
 			}
 			connection.close();
